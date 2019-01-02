@@ -18,6 +18,8 @@ new CronJob({
   }
 });
 
+console.log("Start Gangan to Slack server");
+
 function crowl_gangan(){
   gangan.latest()
     .then((results) => {
