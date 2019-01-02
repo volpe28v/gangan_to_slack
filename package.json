@@ -1,0 +1,12 @@
+{
+  "name": "gangan_to_slack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "cheerio-httpcli": "^0.7.3",
+    "cron": "^1.6.0",
+    "jsonfile": "^5.0.0"
+  }
+}
