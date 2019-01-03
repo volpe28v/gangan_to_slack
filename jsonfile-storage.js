@@ -12,18 +12,16 @@ module.exports.updateOrAddItem = function(item, filename){
       if (j.base_url == item.base_url) return true;
     })[0];
 
-    var is_updated = false;
+    var is_changed = false;
     if (current_item != null){
-      if (current_item.date != item.date){
-        is_updated = true;
-        current_item.date = item.data;
-        current_item.sub_title = item.sub_title;
-        current_item.view_url = item.view_url;
-      }else{
-        return false;
-      }
+      if (current_item.date == item.date) return false;
+
+      is_changed = true;
+      current_item.date = item.data;
+      current_item.sub_title = item.sub_title;
+      current_item.view_url = item.view_url;
     }else{
-      is_updated = true;
+      is_changed = true;
       json.push(item);
     }
 
@@ -33,7 +31,7 @@ module.exports.updateOrAddItem = function(item, filename){
       spaces: 2
     });
 
-    return is_updated;
+    return is_changed;
   }catch(e){
     console.log(e);
     return false;

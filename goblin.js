@@ -1,6 +1,5 @@
 var client = require('cheerio-httpcli');
 
-var backnumber_url = 'https://gihyo.jp/magazine/wdpress/backnumber?start='
 var goblin_urls = [
 'http://www.ganganonline.com/contents/goblin/',
 'http://www.ganganonline.com/contents/goblinbd/',
