@@ -1,14 +1,13 @@
 var client = require('cheerio-httpcli');
 
-var goblin_urls = [
+var gangan_urls = [
 'http://www.ganganonline.com/contents/goblin/',
 'http://www.ganganonline.com/contents/goblinbd/',
 'http://www.ganganonline.com/contents/goblinyo/'
 ]
 
-
 module.exports.latest = function(keyword, page = 0){
-  var requests = goblin_urls.map(function(url){
+  var requests = gangan_urls.map(function(url){
     return new Promise(function(resolve, reject){
       client.fetch(url, {})
         .then(function(result){

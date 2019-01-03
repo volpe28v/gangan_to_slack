@@ -1,5 +1,5 @@
 const { WebClient } = require('@slack/client');
-const gangan = require('./goblin');
+const gangan = require('./gangan');
 const storage = require('./jsonfile-storage');
 
 const token = process.env.SLACK_TOKEN;
