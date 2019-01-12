@@ -17,7 +17,7 @@ module.exports.updateOrAddItem = function(item, filename){
       if (current_item.date == item.date) return false;
 
       is_changed = true;
-      current_item.date = item.data;
+      current_item.date = item.date;
       current_item.sub_title = item.sub_title;
       current_item.view_url = item.view_url;
     }else{
