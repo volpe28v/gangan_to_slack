@@ -40,5 +40,5 @@ function crowl_gangan(){
 }
 
 function get_notify_message(item){
-  return `${item.title}\n${item.date}\n${item.sub_title}\n${item.base_url + item.view_url}`;
+  return `${item.title}\n${item.date}\n${item.sub_title}\n${item.base_url}\n${item.view_url}`;
 }
