@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@slack/client": "^4.8.0",
-    "cheerio-httpcli": "^0.7.3",
+    "@slack/client": "^5.0.2",
+    "cheerio-httpcli": "^0.7.4",
     "cron": "^1.6.0",
     "jsonfile": "^5.0.0"
   }
